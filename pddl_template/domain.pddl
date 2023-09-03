@@ -143,6 +143,7 @@
         :precondition (and
             (at-hero ?loc)
             (has-trap ?loc)
+            (not (trap-disarmed ?loc))
             (arm-free)
         )
         :effect (and
